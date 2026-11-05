@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foodie | Online Food Ordering ABL</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;color:#292524;background:#fffaf5;line-height:1.6}
+.container{width:min(1150px,92%);margin:auto}
+header{background:#7c2d12;color:white;padding:16px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.brand{font-size:1.6rem;font-weight:bold}
+nav ul{display:flex;gap:18px;list-style:none;flex-wrap:wrap}
+nav a{color:white;text-decoration:none}nav a:hover{color:#fed7aa;text-decoration:underline}
+.hero{padding:55px 0;background:linear-gradient(120deg,#ffedd5,#fff7ed)}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);color:#7c2d12}
+.hero p{max-width:620px;margin:12px 0}
+.btn{display:inline-block;background:#ea580c;color:white;padding:10px 17px;border-radius:8px;text-decoration:none;margin-top:10px}
+section{padding:38px 0}h2{color:#9a3412;margin-bottom:20px}
+.offers{background:#ffedd5;border-left:5px solid #ea580c;padding:18px;border-radius:8px}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.food-card{background:white;border:1px solid #fed7aa;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px #7c2d1210}
+.food-image{height:150px;display:grid;place-items:center;font-size:4rem;background:#ffedd5}
+.food-card:nth-child(2) .food-image{background:#fef3c7}.food-card:nth-child(3) .food-image{background:#fee2e2}.food-card:nth-child(4) .food-image{background:#dcfce7}
+.food-info{padding:17px}.food-info h3{color:#7c2d12}
+.price{font-weight:bold;color:#c2410c;font-size:1.1rem}.rating{color:#a16207}
+.reviews{background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:18px}
+footer{background:#7c2d12;color:white;text-align:center;padding:18px}
+@media(max-width:600px){.nav{justify-content:center}nav ul{justify-content:center}}
+</style>
+</head>
+<body>
+<header><div class="container nav"><div class="brand">🍴 Foodie</div><nav aria-label="Main navigation"><ul><li><a href="#menu">Menu</a></li><li><a href="#offers">Offers</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#contact">Contact</a></li></ul></nav></div></header>
+<main>
+<section class="hero"><div class="container"><h1>Good food. Great mood.</h1><p>Order your favorite meals from Foodie. Fresh, tasty, and delivered with care.</p><a class="btn" href="#menu">Explore Menu</a></div></section>
+<section class="container" id="offers"><div class="offers"><h2>🔥 Special Offer</h2><p>Get 20% off your first order. Use code <strong>FOOD20</strong>.</p></div></section>
+<section class="container" id="menu"><h2>Popular Menu</h2><div class="menu-grid">
+<article class="food-card"><div class="food-image" aria-hidden="true">🍕</div><div class="food-info"><h3>Veg Pizza</h3><p>Cheese, vegetables, and a crispy crust.</p><p class="rating">★★★★☆ (4.4)</p><p class="price">₹199</p><a class="btn" href="mailto:orders@foodie.example?subject=Order%20Veg%20Pizza">Order Now</a></div></article>
+<article class="food-card"><div class="food-image" aria-hidden="true">🍔</div><div class="food-info"><h3>Classic Burger</h3><p>Juicy patty with fresh lettuce and sauce.</p><p class="rating">★★★★★ (4.7)</p><p class="price">₹149</p><a class="btn" href="mailto:orders@foodie.example?subject=Order%20Burger">Order Now</a></div></article>
+<article class="food-card"><div class="food-image" aria-hidden="true">🍝</div><div class="food-info"><h3>White Sauce Pasta</h3><p>Creamy pasta with herbs and vegetables.</p><p class="rating">★★★★☆ (4.3)</p><p class="price">₹179</p><a class="btn" href="mailto:orders@foodie.example?subject=Order%20Pasta">Order Now</a></div></article>
+<article class="food-card"><div class="food-image" aria-hidden="true">🥗</div><div class="food-info"><h3>Fresh Salad</h3><p>A healthy mix of seasonal vegetables.</p><p class="rating">★★★★☆ (4.2)</p><p class="price">₹99</p><a class="btn" href="mailto:orders@foodie.example?subject=Order%20Salad">Order Now</a></div></article>
+</div></section>
+<section class="container" id="reviews"><h2>Customer Reviews</h2><div class="reviews"><p>“The food was delicious and arrived fresh. Great service!”</p><p><strong>— A happy customer</strong></p></div></section>
+<section class="container" id="contact"><h2>Contact & Opening Hours</h2><p>Email: <a href="mailto:hello@foodie.example">hello@foodie.example</a></p><p>Open daily: 10:00 AM – 10:00 PM</p><p>Address: Main Street, Your City</p></section>
+</main><footer><p>© 2026 Foodie | Online Food Ordering Website</p></footer>
+</body></html>
